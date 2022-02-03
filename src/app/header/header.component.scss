@@ -14,13 +14,16 @@
         }
     }
     &-dir{
-        width: 30%;
         ul{
             list-style: none;
             justify-content: space-between;
             li a{
+                margin-left: 1rem;
                 color: $color-grey;
                 text-decoration: none;
+            }
+            li a:hover{
+                color: $color-blue;
             }
         }
     }
