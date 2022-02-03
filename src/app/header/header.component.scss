@@ -1,1 +1,27 @@
 @import '../../styles.scss';
+
+.header{
+    height: 70px;
+    padding: 0 3rem;
+    border-bottom: 2px solid $color-black-2;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-black;
+    &-esq{
+        h2{
+            font-weight: 500;
+            color: $color-blue;
+        }
+    }
+    &-dir{
+        width: 30%;
+        ul{
+            list-style: none;
+            justify-content: space-between;
+            li a{
+                color: $color-grey;
+                text-decoration: none;
+            }
+        }
+    }
+}
