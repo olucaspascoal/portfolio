@@ -2,7 +2,7 @@
 
 .header{
     height: 70px;
-    padding: 0 3rem;
+    @include padding;
     border-bottom: 2px solid $color-black-2;
     align-items: center;
     justify-content: space-between;

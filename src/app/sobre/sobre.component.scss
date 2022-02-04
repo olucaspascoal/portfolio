@@ -1,1 +1,58 @@
 @import '../../styles.scss';
+
+.sobre{
+    padding: 2rem 3rem;
+    background-color: $color-black-2;
+
+    &-esq{
+        width: 50%;
+        img{
+            width: auto;
+            height: 100%;
+            border-left: 2px solid $color-blue;
+        }
+    }
+    &-dir{
+        width: 50%;
+        color: $color-white;
+        h2{
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h4{
+            margin: 3rem 0 2rem 0;
+            font-weight: 500;
+        }
+        p{
+            width: 70%;
+            color: $color-grey;
+            line-height: 2rem;
+        }
+        &-social{
+            width: 50%;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .sobre{
+        flex-direction: column;
+        &-esq{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &-dir{
+            width: 100%;
+            p{
+                width: 100%;
+            }
+            &-social{
+                width: 100%;
+            }
+        }
+    }
+}
