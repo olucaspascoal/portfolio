@@ -1,1 +1,54 @@
 @import '../../styles.scss';
+
+.experiencia{
+    padding: 2rem 3rem;
+    color: $color-white;
+    background-color: $color-black;
+    &-esq{
+        width: 20%;
+        margin-top: 2rem;
+        flex-direction: column;
+        border-left: 2px solid $color-black-2;
+        &-item{
+            padding: 1rem;
+        }
+        &-item:first-child{
+            border-left: 2px solid $color-blue;
+            background-color: $color-black-2;
+        }
+    }
+    &-dir{
+        width: 70%;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        flex-direction: column;
+        .subtitle{
+            color: $color-blue;
+            margin: 2rem 0;
+        }
+        .description{
+            color: $color-grey;
+        }
+    }
+    &-title{
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .experiencia{
+        &-box{
+            flex-direction: column;
+        }
+        &-esq{
+            width: 100%;
+            overflow: auto;
+            flex-direction: row;
+        }
+        &-dir{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

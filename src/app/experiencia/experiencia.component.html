@@ -1,1 +1,20 @@
-<p>experiencia works!</p>
+<div class="experiencia">
+    <h2> Experiência </h2>
+    <div class="experiencia-box d-flex">
+        <div class="experiencia-esq d-flex" >
+            <div class="experiencia-esq-item" *ngFor="let item of experiencias; let i=index">
+                {{item.nome}}
+            </div>
+        </div>
+        <div class="experiencia-dir d-flex">
+            <div class="experiencia-title d-flex">
+                <h2> Professor conteudista em Frontend </h2>
+                <p> Nov 2021 - Atual </p>
+            </div>
+            <p class="subtitle"> Digital House </p>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illo dicta perspiciatis exercitationem perferendis fugiat corporis illum asperiores id hic suscipit debitis temporibus ratione, a eos soluta repellat. Illum, quasi?
+            </p>
+        </div>
+    </div>
+</div>
